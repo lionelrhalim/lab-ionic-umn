@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget Planner</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Lato-Light';
+            src: url("Montserrat");
+        }
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .header {
+            color: white;
+            --ion-background-color: #597cbb;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: end;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .content {
+            margin: 40px 40px 40px 40px;
+        }
+    </style>
+</head>
+<body onload="onload()">
+    <ion-app>
+        <ion-header class="header">
+            <ion-toolbar>
+                <ion-title class="center" style="color: white;">Budget Planner</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen>
+            <ion-alert-controller></ion-alert-controller>
+            <div class="content">
+                <ion-card>
+                    <ion-card-header style="margin-top: 20px;">
+                        <ion-card-title class="bold" style="font-size: 30px;">Input Pengeluaran</ion-card-title>
+                    </ion-card-header>
+
+                    <ion-card-content style="margin-bottom: 20px;">
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item style="margin-bottom: 20px">
+                                        <ion-input type="text" id="name" name="name"
+                                                   placeholder="Nama Pengeluaran"></ion-input>
+                                    </ion-item>
+
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item style="margin-bottom: 20px">
+                                        <ion-input type="number" id="amount" name="amount"
+                                                   placeholder="Jumlah Pengeluaran"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col class="right">
+                                    <ion-button id="reset" class="capitalize" onclick="clearForm()" fill="outline" color="danger">
+                                        <ion-icon slot="start" name="close"></ion-icon>
+                                        Hapus
+                                    </ion-button>
+                                    <ion-button id="submit" class="capitalize" onclick="validate()" fill="solid" color="primary">
+                                        <ion-icon slot="start" name="add"></ion-icon>
+                                        Tambah
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+
+                <ion-list style="margin-top: 40px">
+                    <ion-item-group id="expenses"></ion-item-group>
+
+                    <div style="margin-top: 40px">
+                        Total Pengeluaran: Rp. <ion-text id="total" style="text-align: left"></ion-text>
+                    </div>
+                </ion-list>
+            </div>
+        </ion-content>
+    </ion-app>
+</body>
+</html>

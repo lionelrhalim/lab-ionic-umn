@@ -12,9 +12,15 @@ export class RecipesPage implements OnInit {
 
     recipes: Recipe[];
 
-    constructor(private recipeService: RecipesService) { }
+    constructor(
+        private recipeService: RecipesService,
+    ) {}
 
     ngOnInit() {
+        this.recipes = this.recipeService.getAllRecipes();
+    }
+
+    ionViewDidEnter() {
         this.recipes = this.recipeService.getAllRecipes();
     }
 

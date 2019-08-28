@@ -28,7 +28,9 @@ export class RecipesService {
         },
     ];
 
-    constructor() { }
+    constructor(
+        private alertController: AlertController
+    ) { }
 
     getAllRecipes() {
         return [...this.recipes];
@@ -41,4 +43,10 @@ export class RecipesService {
             })
         };
     }
+
+    deleteRecipe(recipeId: string) {
+        this.recipes = this.recipes.filter(recipe => recipe.id !== recipeId)
+    }
+
+
 }

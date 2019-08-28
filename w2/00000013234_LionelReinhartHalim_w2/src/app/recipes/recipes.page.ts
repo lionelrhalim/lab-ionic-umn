@@ -7,6 +7,7 @@ import {RecipesService} from "./recipes.service";
     templateUrl: './recipes.page.html',
     styleUrls: ['./recipes.page.scss'],
 })
+
 export class RecipesPage implements OnInit {
 
     recipes: Recipe[];

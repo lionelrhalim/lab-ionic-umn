@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button color="primary" defaultHref="/places/tabs/discover"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Place Detail</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-img [src]="loadedPlace.imgUrl"></ion-img>
+    <ion-title>
+        {{ loadedPlace.title }}
+    </ion-title>
+</ion-content>

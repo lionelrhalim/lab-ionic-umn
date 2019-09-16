@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Place} from '../../places.model';
 import {ActivatedRoute} from '@angular/router';
 import {PlacesService} from '../../places.service';
+import {ActionSheetController, ModalController} from "@ionic/angular";
+import {CreateBookingComponent} from "../../../bookings/create-booking/create-booking.component";
 
 @Component({
     selector: 'app-place-detail',
@@ -15,6 +17,8 @@ export class PlaceDetailPage implements OnInit {
     constructor(
         private activatedRoute: ActivatedRoute,
         private placesService: PlacesService,
+        private modalController: ModalController,
+        private actionSheetController: ActionSheetController,
     ) { }
 
     ngOnInit() {
@@ -23,10 +27,22 @@ export class PlaceDetailPage implements OnInit {
                 if (!paramMap.has('placeId')) {
                     return;
                 }
-                console.log(paramMap.get('placeId'));
                 this.loadedPlace = this.placesService.getPlace(paramMap.get('placeId'));
             }
         );
     }
 
+    async bookPlace() {
+        const modal = await this.modalController.create({
+            component: CreateBookingComponent,
+            componentProps: {
+                'loadedPlace': this.loadedPlace
+            }
+        }).then(modalElement => {
+            modalElement.present();
+            return modalElement.onDidDismiss();
+        }).then(resultData => {
+            console.log(resultData);
+        })
+    }
 }

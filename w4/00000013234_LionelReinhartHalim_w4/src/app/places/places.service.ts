@@ -9,7 +9,7 @@ export class PlacesService {
     private places: Place[] = [
         new Place(
             'p1',
-            'Serpong M-Rown',
+            'Serpong M-Town',
             '2BR apartment near Summarecon Mal Serpong.',
             'http://www.summareconbekasi.com/public/images/gallery/article/7082/IMG_3293-25.jpg',
             700000000

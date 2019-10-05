@@ -11,6 +11,7 @@ import {ActivatedRoute} from '@angular/router';
 export class DiscoverPage implements OnInit {
 
     places: Place[];
+    listedLoadedPlaces: Place[];
 
     constructor(
         private activatedRoute: ActivatedRoute,
@@ -19,6 +20,10 @@ export class DiscoverPage implements OnInit {
 
     ngOnInit() {
         this.places = this.placesService.getAllPlaces();
+        this.listedLoadedPlaces = this.places.slice(1);
     }
 
+    onFilterUpdate(event) {
+        console.log(event.detail);
+    }
 }

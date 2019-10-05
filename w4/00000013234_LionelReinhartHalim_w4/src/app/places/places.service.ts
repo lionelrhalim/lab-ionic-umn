@@ -21,6 +21,14 @@ export class PlacesService {
             'Near UMN with many choices of foods around.',
             'https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002100123853_wh_3',
             1000000000
+        ),
+
+        new Place(
+            'p3',
+            'BSD Apartment',
+            'BSD Apartment with many choices of foods around.',
+            'https://investproperti.com/wp-content/uploads/2017/07/casa-de-parco-bsd-apartment.jpg',
+            2000000000
         )
     ];
 

@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>UMN UKM</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12">
+                <ion-card *ngFor="let ukm of all_ukm">
+                    <ion-card-header>
+                        <ion-card-title>{{ukm.name}}</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        {{ukm.desc}}
+                    </ion-card-content>
+                    <div text-right class="ion-margin-end ion-margin-bottom">
+                        <ion-button
+                            fill="outline"
+                            color="primary"
+                            (click)="presentJoinAlert(ukm.id)"
+                        >
+                            Join
+                        </ion-button>
+                    </div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

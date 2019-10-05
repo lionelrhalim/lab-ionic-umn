@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Profile</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row class="ion-margin-top">
+            <ion-col>
+                <ion-avatar style="margin: auto">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+        <ion-row text-center>
+            <ion-col>
+                <ion-text>
+                    <h3 style="font-weight: bold">Lionel Reinhart Halim</h3>
+                    <h5 style="font-weight: bold">00000013234</h5>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+        <ion-row text-center>
+            <ion-col>
+                <ion-text>
+                    <h1>My UKMS</h1>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-card *ngIf="joined_ukm.length == 0">
+                    <ion-card-header>
+                        <ion-card-subtitle>Belum Bergabung UKM Apapun.</ion-card-subtitle>
+                    </ion-card-header>
+                </ion-card>
+
+                <ion-list>
+                    <ion-item-sliding class="ion-margin-bottom" *ngFor="let ukm of joined_ukm" #slidingItem>
+                        <ion-item-options>
+                            <ion-item-option color="danger" class="joined-ukm-list" (click)="deleteJoinedUkm(ukm.id, slidingItem)">
+                                <ion-icon name="trash" slot="icon-only"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+                        <ion-item class="joined-ukm-list">
+                            <ion-label>
+                                <ion-text>
+                                    <h2 style="font-weight: bold">{{ukm.name}}</h2>
+                                </ion-text>
+                            </ion-label>
+                        </ion-item>
+                    </ion-item-sliding>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81b3ccd-e29f-42ae-8fce-82c53d0b9490" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/auth/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/auth/auth.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/auth/auth.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/auth/auth.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/auth/auth.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/auth/auth.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/bookings/bookings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/bookings/bookings.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/bookings/bookings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/bookings/bookings.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/bookings/create-booking/create-booking.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/bookings/create-booking/create-booking.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/home/home.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/discover.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/discover.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/place-detail/place-detail.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/place-detail/place-detail.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/discover.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/discover.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/place-detail/place-detail.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/place-detail/place-detail.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/place-detail/place-detail.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/discover/place-detail/place-detail.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/edit-offer/edit-offer.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/edit-offer/edit-offer.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/new-offer/new-offer.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/new-offer/new-offer.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offer-bookings/offer-bookings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offer-bookings/offer-bookings.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offers.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offers.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offers.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offers.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offers.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/offers/offers.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/places.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/app/places/places.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/00000013234_LionelReinhartHalim_w4/src/theme/variables.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,22 +40,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/w4.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/../w2/.idea/w2.iml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectId" id="1QfeZn5mmpZuAdFaw6uh1ur5xjS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../w2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../quiz_uts/00000013234_LionelReinhartHalim_quiz" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -83,6 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1568166136475</updated>
       <workItem from="1568166144837" duration="11452000" />
+      <workItem from="1568772157557" duration="7017000" />
+      <workItem from="1569375735657" duration="7072000" />
     </task>
     <servers />
   </component>
@@ -94,7 +88,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

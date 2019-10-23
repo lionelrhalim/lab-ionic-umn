@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>{{ isLogin ? 'Login' : 'Signup' }}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="4" size-xs="8" size-sm="4" size-md="6" offset-xs="2" offset-sm="4" offset-md="3">
+                <ion-card>
+                    <ion-card-header text-center>
+                        <ion-card-title>Login</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <div *ngIf="!isLoading">
+                            <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                                <ion-list>
+                                    <ion-item>
+                                        <ion-label position="floating">E-mail</ion-label>
+                                        <ion-input
+                                                inputmode="email"
+                                                type="email"
+                                                ngModel
+                                                name="email"
+                                                email
+                                                #emailCtrl="ngModel"
+                                                required></ion-input
+                                        >
+                                    </ion-item>
+                                    <ion-item
+                                            *ngIf="!emailCtrl.valid && emailCtrl.touched"
+                                            lines="none"
+                                    >
+                                        <ion-label>Should be a valid email address</ion-label>
+                                    </ion-item>
+
+                                    <ion-item margin-top>
+                                        <ion-label position="floating">Password</ion-label>
+                                        <ion-input type="password" ngModel name="password" minlength="8" #passCtrl="ngModel" required></ion-input>
+                                    </ion-item>
+                                    <ion-item
+                                            *ngIf="!passCtrl.valid && passCtrl.touched"
+                                            lines="none"
+                                    >
+                                        <ion-label>Password length minimal 8 character</ion-label>
+                                    </ion-item>
+
+                                    <ion-row text-center>
+                                        <ion-col>
+                                            <ion-button
+                                                    justify-content-center
+                                                    margin-top
+                                                    type="button"
+                                                    fill="clear"
+                                                    color="primary"
+                                                    expand="full"
+                                                    (click)="onSwitchAuthMode()"
+                                            >
+                                                Switch to {{ isLogin ? 'Signup' : 'Login' }}
+                                            </ion-button>
+                                        </ion-col>
+                                    </ion-row>
+                                    <ion-row text-center>
+                                        <ion-col>
+                                            <ion-button justify-content-center margin-top type="submit" color="primary" expand="block" (click)="onLogin()" [disabled]="!f.valid">Login</ion-button>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-list>
+                            </form>
+                        </div>
+                        <div *ngIf="isLoading" text-center margin>
+                            <ion-spinner color="primary"></ion-spinner>
+                            <h2>Trying to login...</h2>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-    <ion-segment (ionChange)="onFilterUpdate($event)">
+    <ion-segment (ionChange)="onFilterUpdate($event)" mode="ios">
         <ion-segment-button value="all" checked>All Places</ion-segment-button>
         <ion-segment-button value="bookable">Bookable Places</ion-segment-button>
     </ion-segment>
@@ -16,7 +16,7 @@
     <ion-grid>
         <ion-row>
             <ion-col size="12" size-sm="8" offset-sm="2" text-center>
-                <ion-card>
+                <ion-card mode="ios">
                     <ion-card-header>
                         <ion-card-title>{{ places[0].title }}</ion-card-title>
                         <ion-card-subtitle>{{ places[0].price | currency }}</ion-card-subtitle>

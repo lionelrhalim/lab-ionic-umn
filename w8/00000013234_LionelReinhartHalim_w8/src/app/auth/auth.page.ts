@@ -33,13 +33,13 @@ export class AuthPage implements OnInit {
     }
 
     onLogin() {
-        /*this.isLoading = true;
+        this.isLoading = true;
         this.authService.login();
 
         setTimeout(() => {
             this.isLoading = false;
             this.router.navigateByUrl('/places/tabs/discover');
-        }, 1500);*/
+        }, 1500);
     }
 
     onSubmit(form: NgForm) {
